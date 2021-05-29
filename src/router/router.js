@@ -1,4 +1,3 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
 
 const routes = [
   {
@@ -23,20 +22,15 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ /* @vite-ignore */ '')
   },
   {
-    path : '/projects',
-    name : 'Projects',
-    component : () => import (/* @vite-ignore */ '../views/Projects.vue')
+    path: '/projects',
+    name: 'Projects',
+    component: () => import(/* @vite-ignore */ '../views/Projects.vue')
   },
   {
-    path : '/meeting',
-    name : 'Meeting',
-    component : () => import (/* @vite-ignore */ '../views/meeting.vue')
+    path: '/meeting',
+    name: 'Meeting',
+    component: () => import(/* @vite-ignore */ '../views/meeting.vue')
   }
 ]
 
-const router = createRouter({
-  history: createWebHashHistory(),
-  routes
-})
-
-export default router
+export default routes
