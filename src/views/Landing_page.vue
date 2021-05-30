@@ -27,11 +27,14 @@
             >
               Our Work
             </button>
-            <router-link to="/meeting">
-              <button class="cta-btn-bg text-lg font-bold text-white px-8">
-                Schedule Meeting
-              </button>
-            </router-link>
+            <!-- <router-link to="/meeting"> -->
+            <button
+              @click="redirectMeeting"
+              class="cta-btn-bg text-lg font-bold text-white px-8"
+            >
+              Schedule Meeting
+            </button>
+            <!-- </router-link> -->
           </div>
         </div>
         <div class="order-1 lg:flex place-content-center">
@@ -137,6 +140,9 @@ export default {
     },
     work() {
       document.getElementById("work").scrollIntoView({ behavior: "smooth" });
+    },
+    redirectMeeting() {
+      window.location.href = "https://calendly.com/thegraphbox/";
     },
   },
   components: {

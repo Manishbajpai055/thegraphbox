@@ -2,7 +2,6 @@ import { createApp, pushScopeId } from 'vue'
 import App from './App.vue'
 import './index.css'
 import { createRouter, createWebHashHistory } from 'vue-router'
-import meeting from './views/meeting.vue'
 
 const app = createApp(App)
 

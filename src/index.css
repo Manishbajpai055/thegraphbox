@@ -21,4 +21,7 @@
     .h-100{
         height : 36rem; 
     }
+    .place-items-start-center{
+        place-items : start center;
+    }    
 }
