@@ -43,7 +43,7 @@
             playsinline=""
             crossorigin=""
             loop=""
-            utoplay=""
+            autoplay=""
             src="../assets/reel.mp4"
           ></video>
         </div>
