@@ -41,7 +41,7 @@
             crossorigin=""
             loop=""
             utoplay=""
-            src="src/assets/reel.mp4"
+            src="../assets/reel.mp4"
           ></video>
         </div>
       </div>

@@ -2,16 +2,35 @@ import { createApp, pushScopeId } from 'vue'
 import App from './App.vue'
 import './index.css'
 import { createRouter, createWebHashHistory } from 'vue-router'
-import routes from './router/router'
+import meeting from './views/meeting.vue'
 
 const app = createApp(App)
+
+const routes = [
+    {
+        path: '/',
+        name: 'Home',
+        component: () => import(/* @vite-ignore */'./views/Landing_page.vue')
+    },
+    {
+        path: '/projects',
+        name: 'Projects',
+        component: () => import(/* @vite-ignore */ './views/Projects.vue')
+    },
+    {
+        path: '/meeting',
+        name: 'Meeting',
+        component: () => import(/* @vite-ignore */ './views/meeting.vue')
+    }
+]
+
 const router = createRouter({
     history: createWebHashHistory(),
     routes
 })
 
 app.use(router)
-app.mount('#app')
+app.use(router).mount('#app')
 
 import dayjs from 'dayjs'
 import { createStore } from 'vuex'
