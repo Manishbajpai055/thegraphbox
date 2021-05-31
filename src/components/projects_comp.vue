@@ -34,19 +34,17 @@
         </div>
       </div>
       <div
-        @mouseover="hover()"
-        @mouseleave="unhover()"
-        class="flex flex-row p-4 border-4 border-blue-600 w-60 cursor-pointer"
+        class="flex flex-row shadow-lg p-4 border-4 bg-blue-600 border-blue-600 w-60 cursor-pointer"
         id="allProjects"
       >
         <button
-          class="text-blue-600 hover:outline-null focus:outline-null outline-null font-bold text-lg"
+          class="text-blue-50 hover:outline-null focus:outline-null outline-null font-bold text-lg"
         >
           View All projects
         </button>
         <svg
           id="rA1"
-          class="ml-4 duration-500 fill-current text-blue-600"
+          class="ml-4 duration-500 fill-current text-blue-50"
           version="1.1"
           width="20px"
           xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +64,7 @@
       </div>
     </div>
 
-    <section id="Testimonials" class="mt-10 px-4 md:px-20 py-10 bg-blue-55">
+    <section id="Testimonials" class="mt-10 px-4 md:px-20 py-10 bg-lue-55">
       <div class="font-bold text-4xl text-gray-700 text-center">
         What our Clients say <span>?</span>
       </div>
@@ -114,15 +112,11 @@
 export default {
   name: "Projects",
   props: ["content"],
-  components: {},
-  methods: {
-    hover() {
-      document.getElementById("rA1").style.marginLeft = "1.5rem";
-    },
-    unhover() {
-      document.getElementById("rA1").style.marginLeft = "1rem";
-    },
-  },
 };
 </script>
 
+<style scoped>
+#allProjects:hover #rA1 {
+  margin-left: 1.6rem;
+}
+</style>
