@@ -23,5 +23,10 @@
     }
     .place-items-start-center{
         place-items : start center;
-    }    
+    }
+    @variants responsive {
+        .place-items-start-center{
+        place-items : start center;
+        }   
+    }
 }

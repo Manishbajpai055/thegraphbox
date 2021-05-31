@@ -88,7 +88,7 @@
           <img src="../assets/icons/logos_bugsnag.svg" alt="" />
           <p class="text-base py-4 font-normal text-center">
             The portal has had a great impact since it's been integrated to the
-            website. The team at Inkoop is responsive, easy to work with,
+            website. The team at The Graphbox is responsive, easy to work with,
             understanding, timely, and able to do a great job.
           </p>
           <h3 class="text-xl font-semibold text-center">- Bugsnag</h3>
