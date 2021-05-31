@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div
-      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-start-center gap-4 px-4 md:mx-16"
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:place-items-start-center gap-4 px-4 md:mx-16"
     >
       <div class="py-10 order-1">
         <svg
