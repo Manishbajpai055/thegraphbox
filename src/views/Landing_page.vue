@@ -23,14 +23,14 @@
           <div class="flex flex-row mx-4 md:mx-0 lg:mx-4 my-6">
             <button
               v-on:click="work()"
-              class="cta-btn-bg-2 mr-8 bg-blue-600 text-gray-100 font-semibold text-lg"
+              class="cta-btn-bg-2 mr-4 bg-blue-600 text-gray-100 font-semibold text-lg"
             >
               Our Work
             </button>
             <!-- <router-link to="/meeting"> -->
             <button
               @click="redirectMeeting"
-              class="cta-btn-bg text-lg font-bold text-white px-8"
+              class="cta-btn-bg text-lg font-bold text-white px-4"
             >
               Schedule Meeting
             </button>
@@ -43,7 +43,7 @@
             playsinline=""
             crossorigin=""
             loop=""
-            autoplay=""
+            utoplay=""
             src="../assets/reel.mp4"
           ></video>
         </div>
@@ -104,12 +104,12 @@ a:hover {
 }
 
 .cta-btn-bg-2 {
-  width: 180px;
+  width: 160px;
   height: 62px;
 }
 
 .cta-btn-bg {
-  width: 180px;
+  width: 160px;
   height: 62px;
   background: linear-gradient(
     65.34deg,
